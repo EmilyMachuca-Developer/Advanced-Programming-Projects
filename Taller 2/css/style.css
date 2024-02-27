@@ -1,0 +1,63 @@
+body {
+    margin: 10px 10%;
+    background: linear-gradient(135deg, #ffd166, #ef476f);
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+header {
+    padding: 0 10px;
+    background: linear-gradient(135deg, hwb(0 94% 6% / 0.767), #06d6a0);
+    animation: gradientAnimation 8s ease infinite alternate;
+}
+
+main {
+    display: block;
+    border: rgb(0, 0, 0) 2px solid;
+    padding: 10px;
+    background: linear-gradient(135deg, #ffd166, #ef476f);
+}
+
+section {
+    padding-bottom: 5px;
+    background: linear-gradient(135deg, hwb(17 81% 14%), #118ab2);
+    border: rgb(0, 0, 0) 2px solid;
+    animation: gradientAnimation 8s ease infinite alternate;
+}
+
+section + section {
+    margin-top: 40px;
+}
+
+h2 {
+    margin: 0;
+    padding-left: 10px;
+    background-color: white;
+}
+
+section p {
+    border: hwb(16 45% 27%)10px solid;
+    margin: 20px 10%;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    line-height: 200%;
+}
+
+footer {
+    border-top: black 5px solid;
+    margin: 20px 0;
+    padding: 0 10px;
+    background: linear-gradient(135deg, hwb(15 50% 40%), #073b4c);
+    font-size: 1.2rem;
+    animation: gradientAnimation 8s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
